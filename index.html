@@ -1,0 +1,129 @@
+<html>
+<head> <title> Sudoku Solver by Ralph Ward</title>
+<script type="text/javascript" src="./solve.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<div name="outline" class="outline">
+<br />
+<h1 class="heading"><center>Sudoku Solver</center></h1>
+<form name="form1">
+<div class="lfloat">
+<table border="1" class="puzzle">
+  <tr id="1" name="1" class="">
+    <td name="11" class="none"> <input type="hidden" MAXLENGTH="9"   id ="h11" value="" /><input type="text" class="square" SIZE="1" id="11" MAXLENGTH="1" value="2" /></td>
+    <td name="12" class="none"> <input type="hidden" MAXLENGTH="9"   id ="h12" value="" /><input type="text" class="square" SIZE="1" id="12" MAXLENGTH="1" value="" /></td>
+    <td name="13" class="right"><input type="hidden" MAXLENGTH="9"   id ="h13" value="" /><input type="text" class="square" SIZE="1" id="13" MAXLENGTH="1" value="" /></td>
+    <td name="14" class="left"> <input type="hidden" MAXLENGTH="9"   id ="h14" value="" /><input type="text" class="square" SIZE="1" id="14" MAXLENGTH="1" value="" /></td>
+    <td name="15" class="none"> <input type="hidden" MAXLENGTH="9"   id ="h15" value="" /><input type="text" class="square" SIZE="1" id="15" MAXLENGTH="1" value="" /></td>
+    <td name="16" class="right"><input type="hidden" MAXLENGTH="9"   id ="h16" value="" /><input type="text" class="square" SIZE="1" id="16" MAXLENGTH="1" value="" /></td>
+    <td name="17" class="left"> <input type="hidden" MAXLENGTH="9"   id ="h17" value="" /><input type="text" class="square" SIZE="1" id="17" MAXLENGTH="1" value="" /></td>
+    <td name="18" class="none"> <input type="hidden" MAXLENGTH="9"   id ="h18" value="" /><input type="text" class="square" SIZE="1" id="18" MAXLENGTH="1" value="" /></td>
+    <td name="19" class="none"> <input type="hidden" MAXLENGTH="9"   id ="h19" value="" /><input type="text" class="square" SIZE="1" id="19" MAXLENGTH="1" value="7" /></td>
+  </tr>
+  <tr id="2" name="2">
+    <td name="21" class="none"> <input type="hidden" MAXLENGTH="9"   id ="h21" value="" /><input type="text" class="square" SIZE="1" id="21" MAXLENGTH="1" value="6" /></td>
+    <td name="22" class="none"> <input type="hidden" MAXLENGTH="9"   id ="h22" value="" /><input type="text" class="square" SIZE="1" id="22" MAXLENGTH="1" value="" /></td>
+    <td name="23" class="right"><input type="hidden" MAXLENGTH="9"   id ="h23" value="" /><input type="text" class="square" SIZE="1" id="23" MAXLENGTH="1" value="" /></td>
+    <td name="24" class="left"> <input type="hidden" MAXLENGTH="9"   id ="h24" value="" /><input type="text" class="square" SIZE="1" id="24" MAXLENGTH="1" value="" /></td>
+    <td name="25" class="none"> <input type="hidden" MAXLENGTH="9"   id ="h25" value="" /><input type="text" class="square" SIZE="1" id="25" MAXLENGTH="1" value="" /></td>
+    <td name="26" class="right"><input type="hidden" MAXLENGTH="9"   id ="h26" value="" /><input type="text" class="square" SIZE="1" id="26" MAXLENGTH="1" value="" /></td>
+    <td name="27" class="left"> <input type="hidden" MAXLENGTH="9"   id ="h27" value="" /><input type="text" class="square" SIZE="1" id="27" MAXLENGTH="1" value="" /></td>
+    <td name="28" class="none"> <input type="hidden" MAXLENGTH="9"   id ="h28" value="" /><input type="text" class="square" SIZE="1" id="28" MAXLENGTH="1" value="" /></td>
+    <td name="29" class="none"> <input type="hidden" MAXLENGTH="9"   id ="h29" value="" /><input type="text" class="square" SIZE="1" id="29" MAXLENGTH="1" value="2" /></td>
+  </tr>
+  <tr id="3" name="3">
+    <td name="31" class="bottom"><input type="hidden" MAXLENGTH="9"   id ="h31" value="" /><input type="text" class="square" SIZE="1" id="31" MAXLENGTH="1" value="" /></td>
+    <td name="32" class="bottom"><input type="hidden" MAXLENGTH="9"   id ="h32" value="" /><input type="text" class="square" SIZE="1" id="32" MAXLENGTH="1" value="" /></td>
+    <td name="33" class="bright"><input type="hidden" MAXLENGTH="9"   id ="h33" value="" /><input type="text" class="square" SIZE="1" id="33" MAXLENGTH="1" value="7" /></td>
+    <td name="34" class="bleft"><input type="hidden" MAXLENGTH="9"   id ="h34" value="" /><input type="text" class="square" SIZE="1" id="34" MAXLENGTH="1" value="3" /></td>
+    <td name="35" class="bottom"><input type="hidden" MAXLENGTH="9"   id ="h35" value="" /><input type="text" class="square" SIZE="1" id="35" MAXLENGTH="1" value="" /></td>
+    <td name="36" class="bright"><input type="hidden" MAXLENGTH="9"   id ="h36" value="" /><input type="text" class="square" SIZE="1" id="36" MAXLENGTH="1" value="4" /></td>
+    <td name="37" class="bleft"><input type="hidden" MAXLENGTH="9"   id ="h37" value="" /><input type="text" class="square" SIZE="1" id="37" MAXLENGTH="1" value="8" /></td>
+    <td name="38" class="bottom"><input type="hidden" MAXLENGTH="9"   id ="h38" value="" /><input type="text" class="square" SIZE="1" id="38" MAXLENGTH="1" value="" /></td>
+    <td name="39" class="bottom"><input type="hidden" MAXLENGTH="9"   id ="h39" value="" /><input type="text" class="square" SIZE="1" id="39" MAXLENGTH="1" value="1" /></td>
+  </tr>
+  <tr id="4" name="4">
+    <td name="41" class="top"><input type="hidden" MAXLENGTH="9"   id ="h41" value="" /><input type="text" class="square" SIZE="1" id="41" MAXLENGTH="1" value="" /></td>
+    <td name="42" class="top"><input type="hidden" MAXLENGTH="9"   id ="h42" value="" /><input type="text" class="square" SIZE="1" id="42" MAXLENGTH="1" value="" /></td>
+    <td name="43" class="tright"><input type="hidden" MAXLENGTH="9"   id ="h43" value="" /><input type="text" class="square" SIZE="1" id="43" MAXLENGTH="1" value="2" /></td>
+    <td name="44" class="tleft"><input type="hidden" MAXLENGTH="9"   id ="h44" value="" /><input type="text" class="square" SIZE="1" id="44" MAXLENGTH="1" value="4" /></td>
+    <td name="45" class="top"><input type="hidden" MAXLENGTH="9"   id ="h45" value="" /><input type="text" class="square" SIZE="1" id="45" MAXLENGTH="1" value="" /></td>
+    <td name="46" class="tright"><input type="hidden" MAXLENGTH="9"   id ="h46" value="" /><input type="text" class="square" SIZE="1" id="46" MAXLENGTH="1" value="7" /></td>
+    <td name="47" class="tleft"><input type="hidden" MAXLENGTH="9"   id ="h47" value="" /><input type="text" class="square" SIZE="1" id="47" MAXLENGTH="1" value="9" /></td>
+    <td name="48" class="top"><input type="hidden" MAXLENGTH="9"   id ="h48" value="" /><input type="text" class="square" SIZE="1" id="48" MAXLENGTH="1" value="" /></td>
+    <td name="49" class="top"><input type="hidden" MAXLENGTH="9"   id ="h49" value="" /><input type="text" class="square" SIZE="1" id="49" MAXLENGTH="1" value="" /></td>
+  </tr>
+  <tr id="5" name="5">
+    <td name="51" class="none"><input type="hidden" MAXLENGTH="9"   id ="h51" value="" /><input type="text" class="square" SIZE="1" id="51" MAXLENGTH="1" value="" /></td>
+    <td name="52" class="none"><input type="hidden" MAXLENGTH="9"   id ="h52" value="" /><input type="text" class="square" SIZE="1" id="52" MAXLENGTH="1" value="" /></td>
+    <td name="53" class="right"><input type="hidden" MAXLENGTH="9"   id ="h53" value="" /><input type="text" class="square" SIZE="1" id="53" MAXLENGTH="1" value="" /></td>
+    <td name="54" class="left"><input type="hidden" MAXLENGTH="9"   id ="h54" value="" /><input type="text" class="square" SIZE="1" id="54" MAXLENGTH="1" value="2" /></td>
+    <td name="55" class="none"><input type="hidden" MAXLENGTH="9"   id ="h55" value="" /><input type="text" class="square" SIZE="1" id="55" MAXLENGTH="1" value="" /></td>
+    <td name="56" class="right"><input type="hidden" MAXLENGTH="9"   id ="h56" value="" /><input type="text" class="square" SIZE="1"id="56" MAXLENGTH="1" value="1" /></td>
+    <td name="57" class="left"><input type="hidden" MAXLENGTH="9"   id ="h57" value="" /><input type="text" class="square" SIZE="1" id="57" MAXLENGTH="1" value="" /></td>
+    <td name="58" class="none"><input type="hidden" MAXLENGTH="9"   id ="h58" value="" /><input type="text" class="square" SIZE="1" id="58" MAXLENGTH="1" value="" /></td>
+    <td name="59" class="none"><input type="hidden" MAXLENGTH="9"   id ="h59" value="" /><input type="text" class="square" SIZE="1" id="59" MAXLENGTH="1" value="" /></td>
+  </tr>
+  <tr id="6" name="6">
+    <td name="61" class="bottom"><input type="hidden" MAXLENGTH="9"   id ="h61" value="" /><input type="text" class="square" SIZE="1" id="61" MAXLENGTH="1" value="" /></td>
+    <td name="62" class="bottom"><input type="hidden" MAXLENGTH="9"   id ="h62" value="" /><input type="text" class="square" SIZE="1" id="62" MAXLENGTH="1" value="" /></td>
+    <td name="63" class="bright"><input type="hidden" MAXLENGTH="9"   id ="h63" value="" /><input type="text" class="square" SIZE="1" id="63" MAXLENGTH="1" value="4" /></td>
+    <td name="64" class="bleft"><input type="hidden" MAXLENGTH="9"   id ="h64" value="" /><input type="text" class="square" SIZE="1" id="64" MAXLENGTH="1" value="5" /></td>
+    <td name="65" class="bottom"><input type="hidden" MAXLENGTH="9"   id ="h65" value="" /><input type="text" class="square" SIZE="1" id="65" MAXLENGTH="1" value="" /></td>
+    <td name="66" class="bright"><input type="hidden" MAXLENGTH="9"   id ="h66" value="" /><input type="text" class="square" SIZE="1" id="66" MAXLENGTH="1" value="8" /></td>
+    <td name="67" class="bleft"><input type="hidden" MAXLENGTH="9"   id ="h67" value="" /><input type="text" class="square" SIZE="1" id="67" MAXLENGTH="1" value="2" /></td>
+    <td name="68" class="bottom"><input type="hidden" MAXLENGTH="9"   id ="h68" value="" /><input type="text" class="square" SIZE="1" id="68" MAXLENGTH="1" value="" /></td>
+    <td name="69" class="bottom"><input type="hidden" MAXLENGTH="9"   id ="h69" value="" /><input type="text" class="square" SIZE="1" id="69" MAXLENGTH="1" value="" /></td>
+  </tr>
+  <tr id="7" name="7">
+    <td name="71" class="top"><input type="hidden" MAXLENGTH="9"   id ="h71" value="" /><input type="text" class="square" SIZE="1" id="71" MAXLENGTH="1" value="" /></td>
+    <td name="72" class="top"><input type="hidden" MAXLENGTH="9"   id ="h72" value="" /><input type="text" class="square" SIZE="1" id="72" MAXLENGTH="1" value="" /></td>
+    <td name="73" class="tright"><input type="hidden" MAXLENGTH="9"   id ="h73" value="" /><input type="text" class="square" SIZE="1" id="73" MAXLENGTH="1" value="6" /></td>
+    <td name="74" class="tleft"><input type="hidden" MAXLENGTH="9"   id ="h74" value="" /><input type="text" class="square" SIZE="1" id="74" MAXLENGTH="1" value="7" /></td>
+    <td name="75" class="top"><input type="hidden" MAXLENGTH="9"   id ="h75" value="" /><input type="text" class="square" SIZE="1" id="75" MAXLENGTH="1" value="" /></td>
+    <td name="76" class="tright"><input type="hidden" MAXLENGTH="9"   id ="h76" value="" /><input type="text" class="square" SIZE="1" id="76" MAXLENGTH="1" value="5" /></td>
+    <td name="77" class="tleft"><input type="hidden" MAXLENGTH="9"   id ="h77" value="" /><input type="text" class="square" SIZE="1" id="77" MAXLENGTH="1" value="4" /></td>
+    <td name="78" class="top"><input type="hidden" MAXLENGTH="9"   id ="h78" value="" /><input type="text" class="square" SIZE="1" id="78" MAXLENGTH="1" value="" /></td>
+    <td name="79" class="top"><input type="hidden" MAXLENGTH="9"   id ="h79" value="" /><input type="text" class="square" SIZE="1" id="79" MAXLENGTH="1" value="" /></td>
+  </tr>
+  <tr id="8" name="8">
+    <td name="81" class="none"><input type="hidden" MAXLENGTH="9"   id ="h81" value="" /><input type="text" class="square" SIZE="1" id="81" MAXLENGTH="1" value="3" /></td>
+    <td name="82" class="none"><input type="hidden" MAXLENGTH="9"   id ="h82" value="" /><input type="text" class="square" SIZE="1" id="82" MAXLENGTH="1" value="" /></td>
+    <td name="83" class="right"><input type="hidden" MAXLENGTH="9"   id ="h83" value="" /><input type="text" class="square" SIZE="1" id="83" MAXLENGTH="1" value="" /></td>
+    <td name="84" class="left"><input type="hidden" MAXLENGTH="9"   id ="h84" value="" /><input type="text" class="square" SIZE="1" id="84" MAXLENGTH="1" value="" /></td>
+    <td name="85" class="none"><input type="hidden" MAXLENGTH="9"   id ="h85" value="" /><input type="text" class="square" SIZE="1" id="85" MAXLENGTH="1" value="" /></td>
+    <td name="86" class="right"><input type="hidden" MAXLENGTH="9"   id ="h86" value="" /><input type="text" class="square" SIZE="1" id="86" MAXLENGTH="1" value="" /></td>
+    <td name="87" class="left"><input type="hidden" MAXLENGTH="9"   id ="h87" value="" /><input type="text" class="square" SIZE="1" id="87" MAXLENGTH="1" value="" /></td>
+    <td name="88" class="none"><input type="hidden" MAXLENGTH="9"   id ="h88" value="" /><input type="text" class="square" SIZE="1" id="88" MAXLENGTH="1" value="" /></td>
+    <td name="89" class="none"><input type="hidden" MAXLENGTH="9"   id ="h89" value="" /><input type="text" class="square" SIZE="1" id="89" MAXLENGTH="1" value="6" /></td>
+  </tr>
+  <tr id="9" name="9">
+    <td name="91" class="none"><input type="hidden" MAXLENGTH="9"   id ="h91" value="" /><input type="text" class="square" SIZE="1" id="91" MAXLENGTH="1" value="4" /></td>
+    <td name="92" class="none"><input type="hidden" MAXLENGTH="9"   id ="h92" value="" /><input type="text" class="square" SIZE="1" id="92" MAXLENGTH="1" value="" /></td>
+    <td name="93" class="right"><input type="hidden" MAXLENGTH="9"   id ="h93" value="" /><input type="text" class="square" SIZE="1" id="93" MAXLENGTH="1" value="" /></td>
+    <td name="94" class="left"><input type="hidden" MAXLENGTH="9"   id ="h94" value="" /><input type="text" class="square" SIZE="1" id="94" MAXLENGTH="1" value="" /></td>
+    <td name="95" class="none"><input type="hidden" MAXLENGTH="9"   id ="h95" value="" /><input type="text" class="square" SIZE="1" id="95" MAXLENGTH="1" value="" /></td>
+    <td name="96" class="right"><input type="hidden" MAXLENGTH="9"   id ="h96" value="" /><input type="text" class="square" SIZE="1" id="96" MAXLENGTH="1" value="" /></td>
+    <td name="97" class="left"><input type="hidden" MAXLENGTH="9"   id ="h97" value="" /><input type="text" class="square" SIZE="1" id="97" MAXLENGTH="1" value="" /></td>
+    <td name="98" class="none"><input type="hidden" MAXLENGTH="9"   id ="h98" value="" /><input type="text" class="square" SIZE="1" id="98" MAXLENGTH="1" value="" /></td>
+    <td name="99" class="none"><input type="hidden" MAXLENGTH="9"   id ="h99" value="" /><input type="text" class="square" SIZE="1" id="99" MAXLENGTH="1" value="8" /></td>
+  </tr>
+  </table>
+</div>
+<div class="rfloat">
+  <table border="0">
+    <tr><td class="radio"><input type="radio" name="puzzle" value="Puzzle1" checked="true"> Puzzle 1</td></tr>
+    <tr><td class="radio"><input type="radio" name="puzzle" value="Puzzle2"> Puzzle 2</td></tr>
+    <tr><td class="radio"><input type="radio" name="puzzle" value="Puzzle3"> Puzzle 3</td></tr>
+    <tr><td class="radio"><input type="radio" name="puzzle" value="Puzzle3"> Puzzle 4</td></tr>
+    <tr><td class="radio"><br /></td></tr>
+    <tr><td class="radio"><br /></td></tr>
+    <tr><td class="radio"><center><input type="button" class="btnInputW" value="Load Selected" onClick="reload();" /> <br />
+    <input type="button" class="btnInputS" value="Solve" onClick="begin();" /> <input type="button" class="btnInputS" value="Clear" onClick="clearit();" /></center></td></tr>
+  </table>
+  
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+div.outline {
+  width: 75%;
+  height: 85%;
+  overflow: hidden;
+  margin-top: 4%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  background-color: ECEFF5;
+}
+div.lfloat{
+  margin-left: 10%;
+  width: 60%;
+  float: left;
+}
+div.rfloat{ 
+  width: 20%;
+  margin-right: 10%;
+  margin-top: 10%;
+  float: right;
+}
+table.puzzle {
+  border-width: 2px;
+  border-spacing: 0;
+  border-color: black;
+  border-collapse: collapse;
+  background-color: ECEFF5;
+}
+h1.heading  {
+  font-family: "Helvetica";
+}
+input.square {
+  border: 0px;
+  text-align: center;
+}
+input.btnInput {
+  font-family: Helvetica;
+  color: black;
+}
+td.radio  {
+  font-family: "Helvetica";  
+}
+td.none {
+  height: 40px;
+  width:  40px;
+  padding: 0px;
+  border-style: inset;
+  background-color: white;
+  border-width: 1px;
+  border-left: solid black 1px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+td.tleft {
+  height: 40px;
+  width:  40px;
+  padding: 0px;
+  border-style: inset;
+  background-color: white;
+  border-left: solid black 2px;
+  border-top: solid black 2px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+td.tright {
+  height: 40px;
+  width:  40px;
+  padding: 0px;
+  border-style: inset;
+  background-color: white;
+  border-right: solid black 2px;
+  border-top: solid black 2px;
+  border-left: solid black 1px;
+  border-bottom: solid black 1px;
+}
+td.right {
+  height: 40px;
+  width:  40px;
+  padding: 0px;
+  border-style: inset;
+  background-color: white;
+  border-right: solid black 2px;
+  border-top: solid black 1px;
+  border-left: solid black 1px;
+  border-bottom: solid black 1px;
+}
+td.left {
+  height: 40px;
+  width:  40px;
+  padding: 0px;
+  border-style: inset;
+  background-color: white;
+  border-left: solid black 2px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+td.bright {
+  height: 40px;
+  width:  40px;
+  padding: 0px;
+  border-style: inset;
+  background-color: white;
+  border-right: solid black 2px;
+  border-bottom: solid black 2px;
+  border-top: solid black 1px;
+  border-left: solid black 1px;
+}
+td.bleft {
+  height: 40px;
+  width:  40px;
+  padding: 0px;
+  border-style: inset;
+  background-color: white;
+  border-bottom: solid black 2px;
+  border-left: solid black 2px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+}
+td.top {
+  height: 40px;
+  width:  40px;
+  padding: 0px;
+  border-style: inset;
+  background-color: white;
+  border-top: solid black 2px;
+  border-right: solid black 1px;
+  border-left: solid black 1px;
+  border-bottom: solid black 1px;
+}
+td.bottom {
+  height: 40px;
+  width:  40px;
+  padding: 0px;
+  border-style: inset;
+  background-color: white;
+  border-bottom: solid black 2px;
+  border-right: solid black 1px;
+  border-left: solid black 1px;
+  border-top: solid black 1px;
+}
+input.btnInputW {
+  width: 100%
+}
+input.btnInputS {
+  width 50%;
+}
